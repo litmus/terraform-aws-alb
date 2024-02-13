@@ -2,6 +2,87 @@
 
 All notable changes to this project will be documented in this file.
 
+## [9.7.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.6.0...v9.7.0) (2024-02-11)
+
+
+### Features
+
+* Additional target group attachments ([#351](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/351)) ([b53ce70](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/b53ce700f487884c8add1618993f3843aa458c10))
+
+## [9.6.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.5.0...v9.6.0) (2024-02-07)
+
+
+### Features
+
+* Add support for `load_balancing_anomaly_mitigation` ([#349](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/349)) ([1e3d5fb](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/1e3d5fb89c419c9b56c4728e935278e79b4527cd))
+
+## [9.5.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.4.1...v9.5.0) (2024-01-19)
+
+
+### Features
+
+* Added support for ALB trust store ([#344](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/344)) ([9f03c7a](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/9f03c7ade3de494363f9d5b3fb17932b53d3f426))
+
+### [9.4.1](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.4.0...v9.4.1) (2024-01-12)
+
+
+### Bug Fixes
+
+* Change `subnets` default value to `null` ([#341](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/341)) ([a28fe0b](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/a28fe0b4bda318a271c5eefb1ceec9dbafc3369d))
+
+## [9.4.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.3.0...v9.4.0) (2023-12-23)
+
+
+### Features
+
+* ALB Connection logging ([#334](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/334)) ([3167d65](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/3167d653eadf414f31fa74cdd7e453cff7513f33))
+
+## [9.3.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.2.0...v9.3.0) (2023-12-22)
+
+
+### Features
+
+* Add option enforce_security_group_inbound_rules_on_private_link_traffic ([#332](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/332)) ([33feec8](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/33feec8bb5a0d71bd03097c5e640e064bb03259e))
+
+## [9.2.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.1.0...v9.2.0) (2023-11-13)
+
+
+### Features
+
+* Add ignore changes on tags to `elasticbeanstalk:shared-elb-environment-count` ([#324](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/324)) ([d6715c7](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/d6715c71bb5f1f858915f13366ae152038e299e2))
+
+## [9.1.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.0.0...v9.1.0) (2023-10-30)
+
+
+### Features
+
+* Add support for disabling connection termination for unhealthy targets and AZ DNS affinity ([#315](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/315)) ([c79324e](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/c79324eee6e8930bb2c5f046e4494cd967e7c6a8))
+
+## [9.0.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v8.7.0...v9.0.0) (2023-10-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Refactor module to use maps instead of lists (#305)
+
+### Features
+
+* Refactor module to use maps instead of lists ([#305](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/305)) ([39d5627](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/39d5627d51251c0ccbe9d404cf1ea9ccb4f5b3b7))
+
+## [8.7.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v8.6.1...v8.7.0) (2023-06-16)
+
+
+### Features
+
+* Add web acl association ([#291](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/291)) ([b3b00f0](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/b3b00f0b7a46f473d630dcd4ca6cce3d9a70629f))
+
+### [8.6.1](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v8.6.0...v8.6.1) (2023-06-06)
+
+
+### Bug Fixes
+
+* Explicitly setting http_tcp_listener.action_type to forward fails ([#281](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/281)) ([b6cf424](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/b6cf42464c2f7ac6202a7393c44fdd1eec346562))
+
 ## [8.6.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v8.5.0...v8.6.0) (2023-03-24)
 
 
