@@ -1,0 +1,7 @@
+* @litmus/sre
+
+/.github/dependabot.yml @litmus/sre
+/.regula_config @litmus/sre
+/.pre-commit-config.yaml @mbainter @davops @hootieben @AdamGreenlee
+/.terraform-version @mbainter @davops @hootieben @AdamGreenlee
+/.github/CODEOWNERS @mbainter @davops
