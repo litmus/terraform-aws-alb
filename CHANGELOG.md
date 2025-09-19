@@ -2,6 +2,108 @@
 
 All notable changes to this project will be documented in this file.
 
+## [10.0.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.17.0...v10.0.0) (2025-09-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Bump min supported version of Terraform and AWS to 1.5.7 and `6.5` respectively (#411)
+
+### Features
+
+* Bump min supported version of Terraform and AWS to 1.5.7 and `6.5` respectively ([#411](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/411)) ([f431c0f](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/f431c0f68c6251b40c4aa567c14bd7914b5dfaa1))
+
+## [9.17.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.16.0...v9.17.0) (2025-06-18)
+
+
+### Features
+
+* Added support form minimum_load_balancer_capacity. ([#405](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/405)) ([3f2f8ce](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/3f2f8cec27f48f93f286e827109982c940faa1dd))
+
+## [9.16.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.15.0...v9.16.0) (2025-04-21)
+
+
+### Features
+
+* Add support for `ipam_pools` ([#403](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/403)) ([c50f278](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/c50f278c65a92fa59b3c7ab39d8533d7ae264e5e))
+
+## [9.15.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.14.0...v9.15.0) (2025-04-01)
+
+
+### Features
+
+* Support HTTPS request headers renaming ([#402](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/402)) ([0cb7aff](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/0cb7affd6abaa72c0bc54c757199749b95bd7e8f))
+
+## [9.14.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.13.0...v9.14.0) (2025-03-13)
+
+
+### Features
+
+* Support http respond headers for  ALB listeners ([#398](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/398)) ([9cf65cc](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/9cf65ccf2a1cf35bbc87e4670508c91f8b137b1d))
+
+## [9.13.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.12.0...v9.13.0) (2024-12-21)
+
+
+### Features
+
+* Support `aws_lb_listener.mutual_authentication.advertise_trust_store_ca_names` ([#395](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/395)) ([eba2647](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/eba2647f271b53f0a1f2f5ca6aa70b39254d53d0))
+
+## [9.12.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.11.2...v9.12.0) (2024-10-25)
+
+
+### Features
+
+* Support `aws_lb.enable_zonal_shift` and `aws_lb_listener.tcp_idle_timeout_seconds` ([#385](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/385)) ([f332dfd](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/f332dfdcd486cec3dea4d0d68d83dc74992ad806))
+
+## [9.11.2](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.11.1...v9.11.2) (2024-10-22)
+
+
+### Bug Fixes
+
+* To allow multiple query strings as an OR statement ([#383](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/383)) ([068a578](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/068a57879c5c4846846e7456c5269a2c85bf2f4b))
+
+## [9.11.1](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.11.0...v9.11.1) (2024-10-11)
+
+
+### Bug Fixes
+
+* Update CI workflow versions to latest ([#384](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/384)) ([b2ece6b](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/b2ece6bfff96d71132dba6310b8d55752084e0b1))
+
+## [9.11.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.10.0...v9.11.0) (2024-08-14)
+
+
+### Features
+
+* Support `target_health_state.unhealthy_draining_interval` ([#378](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/378)) ([04b7c93](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/04b7c9301578d0aa3497cf534f7b7e395c37b152))
+
+## [9.10.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.9.0...v9.10.0) (2024-07-22)
+
+
+### Features
+
+* Add `target_group_health` block ([#376](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/376)) ([1e62250](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/1e62250691d2b100737b417fbdd70bd6cdfaa1a3))
+
+## [9.9.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.8.0...v9.9.0) (2024-04-20)
+
+
+### Features
+
+* Add support for `client_keep_alive` ([#361](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/361)) ([66863e0](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/66863e029bf6078fe0e8f7169497ca8203ef3821))
+
+## [9.8.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.7.1...v9.8.0) (2024-03-08)
+
+
+### Features
+
+* Allow multiple listener rule condition blocks ([#359](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/359)) ([8132110](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/8132110bef38fb91a0fa38ef3b9b550cc5cdb3f4))
+
+## [9.7.1](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.7.0...v9.7.1) (2024-03-06)
+
+
+### Bug Fixes
+
+* Update CI workflow versions to remove deprecated runtime warnings ([#358](https://github.com/terraform-aws-modules/terraform-aws-alb/issues/358)) ([84a732b](https://github.com/terraform-aws-modules/terraform-aws-alb/commit/84a732b8866a4db83859dee33ae1af5deb2a8ef5))
+
 ## [9.7.0](https://github.com/terraform-aws-modules/terraform-aws-alb/compare/v9.6.0...v9.7.0) (2024-02-11)
 
 

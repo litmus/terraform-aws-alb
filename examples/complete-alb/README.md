@@ -14,34 +14,36 @@ $ terraform apply
 
 Note that this example may create resources which cost money. Run `terraform destroy` when you don't need these resources.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.33 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.7 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 6.5 |
 | <a name="requirement_null"></a> [null](#requirement\_null) | >= 2.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 3.6 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.33 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 6.5 |
 | <a name="provider_null"></a> [null](#provider\_null) | >= 2.0 |
+| <a name="provider_random"></a> [random](#provider\_random) | >= 3.6 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_acm"></a> [acm](#module\_acm) | terraform-aws-modules/acm/aws | ~> 4.0 |
+| <a name="module_acm"></a> [acm](#module\_acm) | terraform-aws-modules/acm/aws | ~> 5.0 |
 | <a name="module_alb"></a> [alb](#module\_alb) | ../../ | n/a |
 | <a name="module_alb_disabled"></a> [alb\_disabled](#module\_alb\_disabled) | ../../ | n/a |
-| <a name="module_lambda_with_allowed_triggers"></a> [lambda\_with\_allowed\_triggers](#module\_lambda\_with\_allowed\_triggers) | terraform-aws-modules/lambda/aws | ~> 6.0 |
-| <a name="module_lambda_without_allowed_triggers"></a> [lambda\_without\_allowed\_triggers](#module\_lambda\_without\_allowed\_triggers) | terraform-aws-modules/lambda/aws | ~> 6.0 |
-| <a name="module_log_bucket"></a> [log\_bucket](#module\_log\_bucket) | terraform-aws-modules/s3-bucket/aws | ~> 3.0 |
-| <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | ~> 5.0 |
-| <a name="module_wildcard_cert"></a> [wildcard\_cert](#module\_wildcard\_cert) | terraform-aws-modules/acm/aws | ~> 4.0 |
+| <a name="module_lambda_with_allowed_triggers"></a> [lambda\_with\_allowed\_triggers](#module\_lambda\_with\_allowed\_triggers) | terraform-aws-modules/lambda/aws | ~> 8.0 |
+| <a name="module_lambda_without_allowed_triggers"></a> [lambda\_without\_allowed\_triggers](#module\_lambda\_without\_allowed\_triggers) | terraform-aws-modules/lambda/aws | ~> 8.0 |
+| <a name="module_log_bucket"></a> [log\_bucket](#module\_log\_bucket) | terraform-aws-modules/s3-bucket/aws | ~> 5.0 |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | ~> 6.0 |
+| <a name="module_wildcard_cert"></a> [wildcard\_cert](#module\_wildcard\_cert) | terraform-aws-modules/acm/aws | ~> 5.0 |
 
 ## Resources
 
@@ -53,9 +55,10 @@ Note that this example may create resources which cost money. Run `terraform des
 | [aws_instance.other](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
 | [aws_instance.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
 | [null_resource.download_package](https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource) | resource |
+| [random_string.this](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
 | [aws_availability_zones.available](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/availability_zones) | data source |
 | [aws_route53_zone.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/route53_zone) | data source |
-| [aws_ssm_parameter.al2](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter) | data source |
+| [aws_ssm_parameter.al2023](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter) | data source |
 
 ## Inputs
 
@@ -78,4 +81,4 @@ Note that this example may create resources which cost money. Run `terraform des
 | <a name="output_security_group_id"></a> [security\_group\_id](#output\_security\_group\_id) | ID of the security group |
 | <a name="output_target_groups"></a> [target\_groups](#output\_target\_groups) | Map of target groups created and their attributes |
 | <a name="output_zone_id"></a> [zone\_id](#output\_zone\_id) | The zone\_id of the load balancer to assist with creating DNS records |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
